@@ -1,6 +1,6 @@
-// var Genre = require('../models/genre');
-// var Book = require('../models/book');
-// var async = require('async');
+// const Genre = require('../models/genre');
+// const Book = require('../models/book');
+// const async = require('async');
 
 // const { body,validationResult } = require('express-validator/check');
 // const { sanitizeBody } = require('express-validator/filter');
@@ -36,7 +36,7 @@
 //     }, function(err, results) {
 //         if (err) { return next(err); }
 //         if (results.genre==null) { // No results.
-//             var err = new Error('Genre not found');
+//             const err = new Error('Genre not found');
 //             err.status = 404;
 //             return next(err);
 //         }
@@ -67,7 +67,7 @@
 //         const errors = validationResult(req);
 
 //         // Create a genre object with escaped and trimmed data.
-//         var genre = new Genre(
+//         const genre = new Genre(
 //           { name: req.body.name }
 //         );
 
@@ -161,7 +161,7 @@
 //     Genre.findById(req.params.id, function(err, genre) {
 //         if (err) { return next(err); }
 //         if (genre==null) { // No results.
-//             var err = new Error('Genre not found');
+//             const err = new Error('Genre not found');
 //             err.status = 404;
 //             return next(err);
 //         }
@@ -187,7 +187,7 @@
 //         const errors = validationResult(req);
 
 //     // Create a genre object with escaped and trimmed data (and the old id!)
-//         var genre = new Genre(
+//         const genre = new Genre(
 //           {
 //           name: req.body.name,
 //           _id: req.params.id
